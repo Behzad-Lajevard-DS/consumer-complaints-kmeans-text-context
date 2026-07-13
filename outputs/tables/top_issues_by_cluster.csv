@@ -1,0 +1,44 @@
+cluster,issue,count,rank
+0,Attempts to collect debt not owed,54,1.0
+0,Trouble during payment process,28,2.0
+0,False statements or representation,22,3.0
+0,Written notification about debt,22,4.0
+0,Communication tactics,20,5.0
+1,Attempts to collect debt not owed,96,1.0
+1,Written notification about debt,53,2.0
+1,False statements or representation,42,3.0
+1,Took or threatened to take negative or legal action,15,4.0
+1,Communication tactics,5,5.0
+2,Problem with a purchase shown on your statement,50,1.0
+2,Managing an account,47,2.0
+2,Trouble during payment process,36,3.0
+2,Struggling to pay mortgage,19,4.0
+2,Closing an account,17,5.0
+3,Attempts to collect debt not owed,38,1.0
+3,False statements or representation,1,2.0
+4,Attempts to collect debt not owed,19,1.0
+5,Problem with a purchase shown on your statement,48,1.0
+5,Fees or interest,30,2.0
+5,Managing an account,17,3.0
+5,"Other features, terms, or problems",17,4.0
+5,Problem with a lender or other company charging your account,15,5.0
+6,Managing an account,69,1.0
+6,Closing an account,24,2.0
+6,Problem with a lender or other company charging your account,23,3.0
+6,Other transaction problem,13,4.0
+6,Fraud or scam,12,5.0
+7,Managing an account,45,1.0
+7,Problem with a lender or other company charging your account,32,2.0
+7,Unauthorized transactions or other transaction problem,29,3.0
+7,Fraud or scam,21,4.0
+7,Problem with a purchase shown on your statement,21,5.0
+8,Incorrect information on your report,50,1.0
+8,Attempts to collect debt not owed,44,2.0
+8,False statements or representation,20,3.0
+8,Improper use of your report,17,4.0
+8,Problem with a company's investigation into an existing problem,17,5.0
+9,Managing an account,18,1.0
+9,Problem with a purchase shown on your statement,6,2.0
+9,Problem caused by your funds being low,5,3.0
+9,Trouble during payment process,5,4.0
+9,"Other features, terms, or problems",4,5.0
