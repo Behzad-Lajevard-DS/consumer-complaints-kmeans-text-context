@@ -5,8 +5,7 @@
 **Author:** Behzad Lajevard  
 **Project type:** Unsupervised Natural Language Processing  
 **Dataset:** CFPB consumer complaint narratives from Hugging Face  
-**Notebook:** [`notebooks/consumer_complaints_kmeans.ipynb`](notebooks/consumer_complaints_kmeans.ipynb)  
-**Executable pipeline:** [`src/pipeline.py`](src/pipeline.py)
+**Notebook:** [`notebooks/consumer_complaints_kmeans.ipynb`](notebooks/consumer_complaints_kmeans.ipynb)
 
 ## What this project is—and is not
 
@@ -18,7 +17,7 @@ The low silhouette scores are therefore not hidden as failures. They are the mai
 
 ## Project summary
 
-The pipeline streams the first 50,000 records from the public CFPB complaint dataset, detects narrative and metadata columns, cleans the text, constructs TF–IDF unigram and bigram features, evaluates K-means solutions from K=2 to K=10, interprets the selected clusters, and exports analytical outputs.
+The notebook streams the first 50,000 records from the public CFPB complaint dataset, detects narrative and metadata columns, cleans the text, constructs TF–IDF unigram and bigram features, evaluates K-means solutions from K=2 to K=10, interprets the selected clusters, and exports analytical outputs.
 
 | Item | Result |
 |---|---:|
@@ -34,7 +33,7 @@ K=10 was the **upper boundary** of the tested range, and the silhouette score re
 
 > High-quality preprocessing improves the representation of text, but it does not guarantee that the corpus is clusterable. The analytical objective, unit of analysis, and modelling strategy must be grounded in the context of the text before a model is built.
 
-## Pipeline
+## Analysis workflow
 
 1. Stream a reproducible subset from Hugging Face.
 2. Detect narrative, product, issue, and company columns.
@@ -59,7 +58,7 @@ K=10 was the **upper boundary** of the tested range, and the silhouette score re
 
 ![Elbow plot](outputs/figures/elbow_plot.png)
 
-The full local pipeline also generates the silhouette-score plot and the two-dimensional cluster visualization. Their numerical results and interpretation are preserved in the committed tables and documentation.
+The notebook also generates the silhouette-score plot and the two-dimensional cluster visualization. Their numerical results and interpretation are preserved in the committed tables and documentation.
 
 ## Interpreted cluster themes
 
@@ -106,8 +105,6 @@ consumer-complaints-kmeans-text-context/
 │   ├── figures/
 │   ├── tables/
 │   └── project_summary.json
-├── src/
-│   └── pipeline.py
 ├── .gitignore
 ├── CITATION.cff
 ├── CONTRIBUTING.md
@@ -127,17 +124,17 @@ python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-python src/pipeline.py
+jupyter lab notebooks/consumer_complaints_kmeans.ipynb
 ```
 
-Alternatively, open the notebook and run all cells from top to bottom.
+Open the notebook and run all cells from top to bottom.
 
 ### Using Conda
 
 ```bash
 conda env create -f environment.yml
 conda activate complaint-kmeans
-python src/pipeline.py
+jupyter lab notebooks/consumer_complaints_kmeans.ipynb
 ```
 
 ## Important limitations
