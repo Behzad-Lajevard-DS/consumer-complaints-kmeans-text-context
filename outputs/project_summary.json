@@ -1,0 +1,13 @@
+{
+  "dataset": "Mouwiya/cfpb-consumer-complaints",
+  "number_of_documents": 1984,
+  "text_column": "consumer_complaint_narrative",
+  "product_column": "product",
+  "issue_column": "issue",
+  "tfidf_features": 7374,
+  "selected_k": 10,
+  "best_silhouette_score": 0.0245,
+  "random_state": 42,
+  "selection_note": "K=10 maximized the tested silhouette score, but it was the upper boundary of the evaluated range and the score remained low; results are exploratory.",
+  "project_positioning": "This project studies how corpus context and problem formulation constrain clustering. It is not intended to present K-means as a successful production model."
+}
