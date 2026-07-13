@@ -2,7 +2,7 @@
 
 ## Dataset and representation
 
-The pipeline streamed 50,000 source records and retained 1,984 sufficiently long, unique complaint narratives after cleaning. The cleaned texts contained an average of 212.61 words and a median of 175 words. TF–IDF produced a sparse matrix of 1,984 documents by 7,374 unigram and bigram features.
+The notebook streamed 50,000 source records and retained 1,984 sufficiently long, unique complaint narratives after cleaning. The cleaned texts contained an average of 212.61 words and a median of 175 words. TF–IDF produced a sparse matrix of 1,984 documents by 7,374 unigram and bigram features.
 
 ![Narrative length distribution](../outputs/figures/narrative_length_distribution.png)
 
@@ -39,7 +39,7 @@ Inertia declined without a sharp elbow. The silhouette score reached its tested 
 | 8 | 206 | 10.38% | Credit reporting, identity theft, and inaccurate information |
 | 9 | 56 | 2.82% | Wells Fargo-related account and card complaints |
 
-Interpretation combined centroid terms with product and issue distributions. Several small clusters were driven by repeated legal wording, showing that K-means can separate documents by template similarity rather than by a distinct substantive problem.
+These names are post-hoc interpretations, not ground-truth labels.
 
 ## Main conclusion
 
