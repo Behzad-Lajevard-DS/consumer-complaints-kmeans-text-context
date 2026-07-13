@@ -1,0 +1,55 @@
+name: Restore full analysis notebook
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore-full-notebook.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct and validate notebook
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .notebook_restore/part_* | tr -d '\n\r ' | base64 --decode > notebooks/consumer_complaints_kmeans.ipynb
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('notebooks/consumer_complaints_kmeans.ipynb')
+          with path.open(encoding='utf-8') as file:
+              notebook = json.load(file)
+
+          cells = notebook.get('cells', [])
+          code_cells = sum(cell.get('cell_type') == 'code' for cell in cells)
+          markdown_cells = sum(cell.get('cell_type') == 'markdown' for cell in cells)
+
+          assert len(cells) == 48, f'Expected 48 cells, found {len(cells)}'
+          assert code_cells == 27, f'Expected 27 code cells, found {code_cells}'
+          assert markdown_cells == 21, f'Expected 21 markdown cells, found {markdown_cells}'
+
+          print(f'Validated notebook: {len(cells)} cells ({code_cells} code, {markdown_cells} markdown)')
+          PY
+
+      - name: Commit corrected notebook and remove temporary restore files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .notebook_restore
+          rm -f .github/workflows/restore-full-notebook.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Restore complete 48-cell analysis notebook'
+          git push
