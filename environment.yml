@@ -1,0 +1,14 @@
+name: complaint-kmeans
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ipykernel>=6.29
+  - jupyterlab>=4.2
+  - matplotlib>=3.8
+  - numpy>=1.26
+  - pandas>=2.1
+  - scikit-learn>=1.4
+  - pip
+  - pip:
+      - datasets>=4.0,<5.0
