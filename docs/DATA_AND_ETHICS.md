@@ -2,7 +2,7 @@
 
 ## Source
 
-The pipeline accesses the public CFPB consumer complaint collection through the Hugging Face repository `Mouwiya/cfpb-consumer-complaints`.
+The notebook accesses the public CFPB consumer complaint collection through the Hugging Face repository `Mouwiya/cfpb-consumer-complaints`.
 
 ## Responsible use
 
