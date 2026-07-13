@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "When Text Context Limits Clustering"
+message: "Please cite this repository if you use its code, documentation, or methodological framing."
+type: software
+authors:
+  - family-names: Lajevard
+    given-names: Behzad
+year: 2026
+version: 1.0.0
+license: MIT
+abstract: >-
+  An exploratory NLP case study using TF-IDF and K-means on consumer
+  financial complaints, emphasizing that corpus context and problem
+  formulation must precede model selection.
+keywords:
+  - natural language processing
+  - text clustering
+  - k-means
+  - tf-idf
+  - consumer complaints
+  - unsupervised learning
