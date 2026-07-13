@@ -1,0 +1,151 @@
+cluster,rank,term
+0,1,company
+0,2,loan
+0,3,debt
+0,4,paid
+0,5,year
+0,6,payment
+0,7,credit
+0,8,called
+0,9,said
+0,10,sent
+0,11,told
+0,12,account
+0,13,mortgage
+0,14,pay
+0,15,payments
+1,1,debt
+1,2,collection
+1,3,validation
+1,4,reporting
+1,5,alleged
+1,6,credit
+1,7,debt collection
+1,8,account
+1,9,original
+1,10,alleged debt
+1,11,collect
+1,12,documentation
+1,13,fair
+1,14,proper
+1,15,act
+2,1,account
+2,2,funds
+2,3,payment
+2,4,bank
+2,5,regarding
+2,6,complaint
+2,7,issue
+2,8,loan
+2,9,despite
+2,10,requesting
+2,11,year
+2,12,provided
+2,13,received
+2,14,resolution
+2,15,financial
+3,1,falsely reporting
+3,2,falsely
+3,3,reporting credit
+3,4,file rights
+3,5,credit act
+3,6,reporting
+3,7,accounts research
+3,8,collector falsely
+3,9,investigation consumer
+3,10,report violation
+3,11,number falsely
+3,12,credit accounts
+3,13,research
+3,14,consumer report
+3,15,rights fair
+4,1,debt
+4,2,verification
+4,3,fdcpa
+4,4,debt exercising
+4,5,fdcpa seek
+4,6,days debt
+4,7,history verify
+4,8,receive verification
+4,9,created debt
+4,10,seek verification
+4,11,fdcpa entitled
+4,12,rights fdcpa
+4,13,entitled receive
+4,14,claimed original
+4,15,agencies pursuant
+5,1,card
+5,2,credit card
+5,3,credit
+5,4,called
+5,5,bank
+5,6,account
+5,7,charges
+5,8,pay
+5,9,new
+5,10,told
+5,11,said
+5,12,year
+5,13,did
+5,14,received
+5,15,charged
+6,1,money
+6,2,account
+6,3,bank
+6,4,check
+6,5,funds
+6,6,chime
+6,7,deposit
+6,8,told
+6,9,called
+6,10,closed
+6,11,sent
+6,12,said
+6,13,just
+6,14,checking
+6,15,did
+7,1,transactions
+7,2,unauthorized
+7,3,transaction
+7,4,cash
+7,5,cash app
+7,6,app
+7,7,fraud
+7,8,account
+7,9,bank
+7,10,denied
+7,11,claim
+7,12,dispute
+7,13,investigation
+7,14,unauthorized transactions
+7,15,chime
+8,1,report
+8,2,credit
+8,3,reporting
+8,4,credit report
+8,5,information
+8,6,inaccurate
+8,7,account
+8,8,accounts
+8,9,credit reporting
+8,10,fcra
+8,11,reported
+8,12,identity
+8,13,identity theft
+8,14,theft
+8,15,reporting act
+9,1,wells
+9,2,wells fargo
+9,3,fargo
+9,4,account
+9,5,bank
+9,6,card
+9,7,unauthorized
+9,8,claim
+9,9,transaction
+9,10,did
+9,11,fraud
+9,12,phone
+9,13,wells fargos
+9,14,fargos
+9,15,branch
